@@ -1,1 +1,42 @@
 /*  your css code here. If applicable */
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.progress-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+
+.circle.active {
+    background-color: blue;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
